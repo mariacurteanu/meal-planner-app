@@ -1,24 +1,56 @@
+# Munch Time - Meal Planner App
 
-**Assessment 1.2 (Total Marks **20**)**
+A full-stack meal planning application built with React, Node.js, and MongoDB.
 
-Assignment: **Software requirements analysis and design (**Full-Stack CRUD Application Development with DevOps Practices**)**
+## Public URL
+http://13.236.187.144
 
+## JIRA Board
+https://mariacurteanu01.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiMjdkOTliNDU1MGRjNDQ4Mzk1NDk1MDdkODlkM2NjMGQiLCJwIjoiaiJ9  
 
----
+## Tech Stack
+- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB Atlas
+- Deployment: AWS EC2, Nginx, PM2
+- CI/CD: GitHub Actions
 
-**Objective**
+## Project Setup Instructions
 
-For this assessment, you have already been assigned a project. Your task is to develop a system that implements CRUD (Create, Read, Update, Delete) operations based on the selected project. The system should include both a user panel and an admin panel. Depending on the nature of your chosen project, you may decide how many CRUD operations are required to support the functionality of the system. You have been provided with a starter project that includes user authentication using Node.js, React.js, and MongoDB, your should extend this application based on your assigned project requirements. Ensure that the implemented features are appropriate and meaningful for your selected project. Your project should include the following:
-In this assignment you will complete the following tasks:
+### Prerequisites
+- Node.js v20+
+- MongoDB Atlas account
+- Git
 
-* **Basic Version Control using GitHub**
-* **Development, CI/CD Integration for Automated Deployment**
-* **Project report**
+### Backend Setup
+```bash
+cd backend
+npm install
+cp .env.example .env
+# Add your MongoDB URI and JWT secret to .env
+node server.js
+```
 
- 
----
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
 
-**GitHub link of the starter project: **[https://github.com/nahaQUT/sampleapp_IFQ636.git](https://github.com/nahaQUT/sampleapp_IFQ636.git)
+## Test Credentials
 
----
+### Regular User
+- Email: test@test.com
+- Password: password123
 
+### Admin User
+- Email: admin@test.com
+- Password: admin123
+
+## Features
+- User registration and login
+- Weekly meal plan with Breakfast/Lunch/Dinner grid
+- Add, edit and delete meals
+- Meal plan history
+- Admin panel with user management
